@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptozpay | Unified Solution</title>
+      <!-- favicon  -->
+  <link href="assets/img/favicon-crypto.png" rel="icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<style>
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+.feature{
+    width: 80%;
+}
+
+main > nav {
+
+	position: sticky;
+	top: 2rem;
+	align-self: start;
+}
+
+.section-nav li.active > a {
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+}
+
+.section-nav {
+    width: 20%;
+	padding-left: 0;
+	
+}
+
+.section-nav a {
+	text-decoration: none;
+	display: block;
+	padding: .125rem 0;
+	color:rgb(255, 255, 255);
+	transition: all 50ms ease-in-out; 
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+	color: #666;
+}
+
+/* Poor man's reset */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    background: #065a5db3
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+ol{
+    background-color: #528698;
+}
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-left: 1rem;
+  margin-bottom: 18px;
+}
+
+h1 {
+    color: white;
+	font-weight: 300;
+}
+h2{
+    color: white;
+}
+
+p{
+    text-align: justify;
+    padding: 0px 20px 0px 0px;
+}
+/* page layout */
+main {
+  color: white;
+	display: flex;
+	grid-template-columns: 1fr 15em;
+	max-width: 100em;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* enlarge the sections for this demo, so that we have a long scrollable page */
+section {
+	padding-bottom: 3rem;
+}
+@media (max-width:668px){
+    .section-nav{
+        display:none;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .feature{
+        width: 100%;
+    }
+    p{
+        padding: 0px 0px 0px 0px;
+    }
+    .container_1{
+    flex-direction: column;
+
+}
+}
+.unified-backround {
+    display: flex;
+    width: 100%;
+    height: calc(100px -80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.unified-backround::before {
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: -15%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, #03ffe8);
+    animation: object1 6s linear infinite;
+}
+
+.unified-backround::after {
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, #03ffe8);
+    animation: object2 6s linear infinite;
+}
+
+.unified {
+
+    padding: 14px;
+    margin: 52px 0px;
+}
+
+.unifieds {
+    z-index: 5;
+}
+
+@keyframes object1 {
+    50% {
+        left: -13%;
+        top: 41%;
+    }
+}
+
+@keyframes object2 {
+    50% {
+        left: 35%;
+        top: 20%;
+    }
+}
+.unified-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #215c7199 0%, rgb(0 169 217 / 23%) 35%, rgb(0 212 255 / 41%) 100%);
+    font-size: 18px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    margin-top: 32px;
+    transition: 0.5s;
+    text-transform: capitalize;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.unified-btn:hover {
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+    border-top-right-radius: 30px;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+.unified-img {
+    position: relative;
+    height: 100%;
+    margin-top: 52px;
+    width: calc(130% -80px);
+    transform: rotateY('180deg');
+}
+
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 868px) {
+    .unified-backround {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .unified {
+        padding: 4px;
+        margin: 2px 0px;
+    }
+    .unified h1 {
+        font-size: 30px;
+        margin: 12px 0px;
+        padding: 0px 0px 12px 0px
+    }
+
+    .unified p {
+        padding: 0px 0px 0px 0px;
+        font-size: 20px;
+    }
+    .unified-row{
+        flex-direction: column;
+    }
+   
+    .unified-backround::before {
+        position: absolute;
+        content: '';
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        left: -19%;
+        top: 58%;
+        background: linear-gradient(45deg, #7f00ff, pink);
+        animation: object1 6s linear infinite;
+    }
+    .unified-backround::after {
+        position: absolute;
+        content: '';
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        left: 35%;
+        top: 12%;
+        background: linear-gradient(45deg, #7f00ff, pink);
+        animation: object2 6s linear infinite;
+    }
+    .unified-section2{
+        width: 100%;
+        margin: 25px;
+    }
+   
+}
+@media (max-width: 1024px) and (min-width:768px) {  
+    .unified h1 {
+        font-size: 35px;
+        margin: 52px 0px;
+        padding: 0px 0px 0px 0px
+    }
+    .unified p {
+        padding: 0px 0px 0px 0px;
+        font-size: 25px;
+        width: 300px;
+    }
+    .unified {
+        padding: 14px;
+        margin: 15px 0px;
+        width: 704px;
+    }
+    .unified-service2{
+        flex-direction: column;
+    }
+}
+.unified-img {
+    position: relative;
+    height: 100%;
+    margin-top: 52px;
+    width: calc(130% -80px);
+    transform: rotateY('180deg');
+}
+
+</style>
+<body>
+<div class="main-container">
+    <nav class="navbar" >
+        <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="" class="crossbtn"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li class="dropdown"><a href="/index.html">HOME</a></li>
+                <li class="dropdown"><a href="/unified-solution.html">UNIFIED SOLUTIONS</a></li>
+                <li class="dropdown"><a href="#faq">FAQ</a></li></li>
+                <li class="dropdown"><a href="/contact.html" class="btn-gs">GET IN TOUCH</a></li>   
+                <!-- <li id="google_translate_element"></li>  -->
+        </ul>
+        
+                <!-- sidebar ends here -->
+        
+        <a href="/index.html" class="logoholder" ><img src="/assets/img/logo.png" alt="" class="logo" width="150px"></a>
+                <ul class="menu">
+                  <li class="hideOnMobile pad"><a href="/unified-solution.html">UNIFIED SOLUTIONS</a></li>
+                <li class="hideOnMobile pad"><a href="#faq">FAQ</a></li></li>
+                <li class="hideOnMobile pad"><a href="/contact.html" class="btn-gs">GET IN TOUCH</a></li>
+                <li id="google_translate_element" style="padding-top: 10px; padding-right: 20px;"></li>
+                <li onclick=showSidebar()><a href="#" class="togglebar"><i class="fa-solid fa-bars fa-xl" style="color:white"></i></a></li>
+                </ul>
+        </nav>
+      <!-- javascript for sidebar  -->
+      <script>
+              function showSidebar(){
+                      const sidebar = document.querySelector('.sidebar')
+                      sidebar.style.display = 'flex'
+              }
+              function hideSidebar(){
+                      const sidebar = document.querySelector('.sidebar')
+                      sidebar.style.display = 'none'
+              }
+      </script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!-- javascript and Navigation end here -->
+    <div class="unified-backround">
+        <div class="unified unifieds anim ">
+          <h1 class="slogan" style="animation: textAnimation 5s ease-in forwards;">WELCOME TO CRYPTOZPAY-UNIFIED SOLUTION!</h1>
+  <p class="para"> Our comprehensive suite of features encompasses everything you need to seamlessly integrate cryptocurrency payments into your business operations. From instant transactions and customizable payment options to advanced security measures and round-the-clock support, CryptoZPay offers a unified solution that empowers businesses to embrace the future of payments with confidence. </p>
+          <a href="#" class="unified-btn">Join Now</a>
+        </div>
+        <div class="unified-img anim">
+          <img src="/assets/img/unified5.png" alt="">
+        </div>
+      </div>
+
+      <div class="heading">
+        <h1 class="slogan" style="animation: textAnimation 5s ease-in forwards;">FEATURES AND SERVICES</h1>
+        <p class="para"></p>
+      </div>
+    <main style="margin-top: 150px;">
+        <div class="feature">
+            <h1></h1>
+    <section id="introduction">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>Cryptocurrency Wallet Integration</h2>
+                <p>CryptoPay is a cutting-edge cryptocurrency payment platform designed to revolutionize the way businesses and individuals transact in the digital economy. By harnessing the power of blockchain technology, CryptoPay offers a secure, transparent, and efficient payment solution that enables seamless transactions with various cryptocurrencies.
+  <br>
+  <br>
+                    At its core, CryptoPay aims to bridge the gap between traditional financial systems and the emerging world of digital assets. Whether you're a merchant looking to accept cryptocurrency payments or an individual seeking a convenient way to manage your digital wealth, CryptoPay provides a comprehensive suite of tools and services to meet your needs.</p>
+            </section>
+            <section id="request-response">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>Secure Transactions</h2>
+                <p>CryptoPay employs advanced encryption and security protocols to ensure the safety and integrity of every transaction. By leveraging blockchain technology, CryptoPay minimizes the risk of fraud, chargebacks, and unauthorized access, providing users with peace of mind when conducting transactions.</p>
+            </section>
+            <section id="authentication">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>Multi-Currency Support</h2>
+                <p>With CryptoPay, users can transact with a wide range of cryptocurrencies, including Bitcoin, Ethereum, Litecoin, and more. This multi-currency support offers flexibility and choice, allowing users to conduct transactions using their preferred digital assets.
+                </p>
+            </section>
+            <section id="endpoints">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>History</h2>
+                <section id="endpoints--root">
+                    <h3>Transaction History and Reporting</h3>
+                    <p>CryptoPay provides users with comprehensive transaction history and reporting tools, allowing them to track and analyze their cryptocurrency transactions over time. Users can view detailed transaction records, including timestamps, amounts, and transaction IDs, and generate reports for accounting, tax reporting, and reconciliation purposes.</p>
+                </section>
+                <section id="endpoints--cities-overview">
+                    <h3>Automatic Currency Conversion</h3>
+                    <p>CryptoPay offers automatic currency conversion functionality, enabling users to seamlessly convert between different cryptocurrencies and fiat currencies at real-time exchange rates. This feature eliminates the need for manual conversion and simplifies the process of managing multi-currency balances within the platform.</p>
+                </section>
+                <section id="endpoints--city-detail">
+                    <h3>Scheduled Payments</h3>
+                    <p>CryptoPay allows users to schedule recurring payments or transfers at predetermined intervals, providing convenience and flexibility for managing regular expenses, subscriptions, and investments. Users can set up automated payment schedules and customize payment frequencies according to their preferences.</p>
+                </section>
+                <section id="endpoints--city-config">
+                    <h3>Two-Factor Authentication (2FA)</h3>
+                    <p>To enhance security, CryptoPay implements two-factor authentication (2FA) as an additional layer of protection for user accounts. Users can enable 2FA using methods such as SMS verification, authenticator apps, or hardware tokens, reducing the risk of unauthorized access and account compromise.</p>
+                </section>
+                <section id="endpoints--city-spots-overview">
+                    <h3>Regulatory Compliance</h3>
+                    <p>CryptoPay adheres to regulatory compliance requirements and industry standards to ensure the legal and regulatory integrity of its platform. This includes compliance with anti-money laundering (AML) and know your customer (KYC) regulations, as well as data protection and privacy laws, providing users with confidence in the platform's legitimacy and trustworthiness.</p>
+                </section>
+                <section id="endpoints--city-spot-detail">
+                    <h3>Scalability and Performance</h3>
+                    <p>CryptoPay is built on a scalable and high-performance infrastructure designed to accommodate growing user demand and transaction volumes. The platform utilizes advanced technologies such as cloud computing, distributed ledger technology (DLT), and microservices architecture to deliver reliable and scalable performance, even during peak usage periods.</p>
+                </section>
+                <section id="endpoints--city-icons-overview">
+                    <h3>Community Engagement and Support</h3>
+                    <p>CryptoPay fosters an active and engaged community of users, developers, and enthusiasts through forums, social media channels, and community events. The platform provides ongoing support, updates, and educational resources to empower users and foster collaboration within the cryptocurrency ecosystem.</p>
+                </section>
+                <section id="endpoints--city-icon-detail">
+                    <h3>Partnerships and Collaborations</h3>
+                    <p>CryptoPay collaborates with strategic partners, financial institutions, and industry stakeholders to expand its reach, enhance its capabilities, and drive adoption of cryptocurrency payments. By forming partnerships with leading companies and organizations, CryptoPay strengthens its position in the market and delivers added value to its users.</p>
+                </section>
+            </section>
+            <section id="links">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>User-Friendly Interface</h2>
+                <p>CryptoPay boasts an intuitive and easy-to-navigate interface that caters to both experienced cryptocurrency enthusiasts and newcomers alike. Whether you're sending funds, receiving payments, or managing your account, CryptoPay's user-friendly platform makes it simple and straightforward.</p>
+            </section>
+            <section id="expanders">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>Fast Transaction Processing</h2>
+                <p>Say goodbye to long wait times and slow transaction speeds. CryptoPay facilitates fast and efficient transaction processing, ensuring that payments are executed promptly and without delay. Whether you're making a purchase online or transferring funds to a friend, CryptoPay delivers lightning-fast transactions every time.</p>
+            </section>
+            <section id="filters">
+                <h2><i class="fa-solid fa-angles-right" style="color: rgb(0, 145, 255);"></i>Integration with E-commerce Platforms</h2>
+                <p>CryptoPay seamlessly integrates with popular e-commerce platforms, allowing merchants to accept cryptocurrency payments with ease. Whether you run an online store or a brick-and-mortar business, CryptoPay provides a hassle-free payment solution that enhances the customer experience and drives revenue growth.</p>
+            </section>
+        </div>
+        <nav class="section-nav">
+            <ol>
+                <li><a href="#introduction">Cryptocurrency Wallet Integration</a></li>
+                <li><a href="#request-response">Secure Transactions</a></li>
+                <li><a href="#authentication">Multi-Currency Support</a></li>
+                <li><a href="#endpoints">Transaction History and Reporting</a>
+                    <ul>
+                        <li class=""><a href="#endpoints--root"></a></li>
+                        <li class=""><a href="#endpoints--cities-overview">Automatic Currency Conversion</a></li>
+                        <li class=""><a href="#endpoints--city-detail">Scheduled Payments</a></li>
+                        <li class=""><a href="#endpoints--city-config">Two-Factor Authentication (2FA)</a></li>
+                        <li class=""><a href="#endpoints--city-spots-overview">Regulatory Compliance</a></li>
+                        <li class=""><a href="#endpoints--city-spot-detail">Scalability and Performance</a></li>
+                        <li class=""><a href="#endpoints--city-icons-overview">Community Engagement and Support</a></li>
+                        <li class=""><a href="#endpoints--city-icon-detail">Partnerships and Collaborations</a></li>
+                    </ul>
+                </li>
+                <li class=""><a href="#links">User-Friendly Interface</a></li>
+                <li class=""><a href="#expanders">Fast Transaction Processing
+                </a></li>
+                <li class=""><a href="#filters">Integration with E-commerce Platforms</a></li>
+            </ol>
+        </nav>
+    </main>
+ <!-- faq section  -->
+<div class="heading" id="faq">
+    <h1 class="slogan" style="animation: textAnimation 5s ease-in forwards;">Frequently Asked Questions</h1>
+    <p class="para"> If you have questions about our services or policies you're likely to find the information you need right here.</p>
+  </div>
+  <div class="faq" >
+  <div class="faq-parts">
+  <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">If client asking for refund ?
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">If request is already approved from our side then we cant make refund.</div>
+  </div>
+  <div class="faq-item">
+  <div class="question" onclick="toggleAnswer(this)">What is a payment gateways ? 
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+  <div class="answer">A payment gateways is a technology solution businesses can use to accept payments digitally. It can be integrated into web or mobile platforms to enable transactions via one or more payment modes, like UPI, credit or debit cards, and net banking. When a customer makes a payment, the payment gateways securely deals with the customer’s sensitive data, such as card or UPI details. It then verifies the payment details and checks if the customer has sufficient funds in the source account to make the purchase. Once that is done, it starts the process of facilitating the funds to move from the customer’s account to the merchant’s. The customer gets a confirmation of whether the payment has been accepted or declined. Payment gateway providers are crucial in facilitating online transactions between merchants, customers, and banks.</div>
+  </div>
+  <div class="faq-item">
+  <div class="question" onclick="toggleAnswer(this)"> How does Cryptozpay work
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+  <div class="answer">Cryptozpay integrates with your existing checkout process or website, providing a seamless experience for customers wishing to pay with cryptocurrencies. It generates unique wallet addresses for each transaction, which are securely processed and verified on the blockchain network.</div>
+  </div>
+  <div class="faq-item">
+  <div class="question" onclick="toggleAnswer(this)">What cryptocurrencies does Cryptozpay support?
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+  <div class="answer">Cryptozpay supports a wide range of cryptocurrencies, including but not limited to Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Ripple (XRP), and many more. Contact our support team for the most up-to-date list.</div>
+  </div>
+  </div>
+  <div class="faq-parts">
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">How can I integrate Cryptozpay into my website or platform?
+        <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      <div class="answer">Integrating Cryptozpay into your website or platform is straightforward and can be done using our API documentation and developer resources. We also offer plugins and modules for popular e-commerce platforms for easy integration.</div>
+    </div>
+    <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Is Cryptozpay secure?
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">Yes, Cryptozpay prioritizes security and employs industry-leading encryption techniques to safeguard both customer and merchant data. Transactions are conducted securely on the blockchain network, minimizing the risk of fraud or unauthorized access.</div>
+    </div>
+    <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)">Is there customer support available?
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">Absolutely! Our dedicated customer support team is available to assist you with any questions or issues you may have. Contact us via email, phone, or through our support portal, and we'll be happy to help</div>
+    </div>
+    <div class="faq-item">
+    <div class="question" onclick="toggleAnswer(this)"> Is Cryptozpay available internationally?
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">Yes, Cryptozpay is available for merchants worldwide. Whether you operate locally or internationally, you can leverage Cryptozpay to accept cryptocurrency payments from customers around the globe.</div>
+    </div></div>
+    </div>
+  <!-- faq section ends  -->
+  <!-- partner with us section starts  -->
+  <div class="heading" id="pwu">
+    <h1 class="slogan" style="animation: textAnimation 5s ease-in forwards;">Partner With Us!</h1>
+    <p class="para">If you're interested in exploring partnership possibilities or would like to learn more about how we can work together, please reach out to us.</p>
+  </div>
+  <section class="pwu">
+    <div class="backlayer">
+     <div class="back">
+  
+      <h2>Join the Cryptozpay partner program</h2>
+      <p>Are you seeking to expand your business's payment options and delve into the world of cryptocurrencies? Look no further than partnering with Cryptozpay, your gateway to seamless crypto transactions.</p>
+        <form action="#">
+          <textarea id="emailTextarea" placeholder="Enter your email address"></textarea>
+          <a href="" class="pwu-btn">Join Now</a>
+      </form>
+    </div>
+  </div>
+    <div class="backlayer"><img src="/assets/img/pwu.png" class="pwu-bit"></div>
+    </section>
+  <!-- partner  section ends  -->
+<!-- contact section  -->
+<div class="main-con-heading">
+  <div class="main-con">
+  <h1 class="slogan" style="animation: textAnimation 5s ease-in forwards;">Ready to embark on this journey with us? Contact us today to learn more about CryptozPay and how you can be a part of our growing community.</h1>
+  <div class="para">Reach out to us for prompt and personalized support on all your payment needs.</div>
+  <a href="/contact.html" class="btn-gs">GET IN TOUCH</a>
+</div>
+</div>
+<!-- footer starts here  -->
+<footer id="footer">
+    <div class="copyright">
+      <p><a href="/TS.html" style="font-weight: 400;">Terms of Services</a> | Copyright ©<a href="">Cryptozpay.</a> All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-telegram fa-2xl" style="color: #2071fe;"></i></a>
+        <a href="skype:live:.cid.8f90251ba2ed4c3f?chat"><i class="fa-brands fa-skype fa-2xl" style="color: #2071fe;"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #2071fe;"></i></a>
+        </div>
+    </div>
+  </footer>
+<!-- footer ends  -->
+</div>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        if (entry.intersectionRatio > 0) {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+        } else {
+            document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+        }
+    });
+});
+
+// Track all sections that have an `id` applied
+document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section);
+});
+
+});
+    </script>
+</body>
+<script src="/assets/js/script.js"></script>
+</html>
