@@ -7,6 +7,22 @@ html{
 	scroll-behavior: smooth;
 	
 }
+body{
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #0a5a72;
+    border-radius: 20px;
+  }
 .main-container{
 	
     background-image: radial-gradient(ellipse farthest-corner at right bottom, #00161b 0%, #014052 27%, #211d1d 121%, #ffffff 40%, #7b6c6c 80%), radial-gradient(ellipse farthest-corner at left top, #fffbfb 0%, #ffffff 8%, #e8dcd8 25%, #169595 62.5%, #000000 100%);
